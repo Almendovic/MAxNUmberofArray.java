@@ -5,7 +5,7 @@ public class RunnerB {
 
         Townhouse house=new Townhouse();
         house.address="123134 road";
-        //house.city="Virginia";  todo no accessible outside of the package without extends
+        //house.city="Fairfax";  todo no accessible outside of the package without extends
 
 
 

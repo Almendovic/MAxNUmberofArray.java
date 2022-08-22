@@ -9,7 +9,7 @@ public class Townhouse extends House {
 
         Townhouse house=new Townhouse();
         house.address="123134 road";
-        house.city="Virginia";
+        house.city="Fairfax";
 
 
 

@@ -1,0 +1,86 @@
+8/22/2022
+
+Day 39 Inheritance
+
+day39_inheritance
+____________________________________________________________
+
+OOP: Inheritance
+____________________________________________________________
+
+Opening diagrams in intellij (ONLY IN ULTIMATE)
+
+    right click on package -> diagrams -> show diagrams
+____________________________________________________________
+
+Inheritance
+
+    allows us to pass information/inherit from one class to another
+
+    + gives us code re-usability and code maintainability
+
+    + good organization, allow us to set up ideas, connect classes with similar ideas
+
+How to inherit in java
+
+    use extends keyword in the class declaration
+
+    syntax: Child extends Parent
+
+        -> Parent class passes information to the Child class
+
+    ex:
+
+        public class Planet{
+            int distanceFromTheSun;
+        }
+
+        public class Earth extends Planet{
+
+        }
+
+Relationship between classes
+    use 'is a' relation to describe how classes are connected
+
+        child is a parent
+
+        Ex: Earth is a Planet
+
+Describe classes in inheritance
+
+    parent == super == base
+
+    child == sub == derived
+
+What is inherited:
+
+    all public variables & methods
+    all protected variables & methods
+    default variables & method that are IN THE SAME PACKAGE
+
+What is not inherited:
+
+    all private variables & methods
+    default variables & methods that are NOT IN THE SAME PACKAGE
+    constructors
+
+How many parents can we have
+
+    in java you can only only one direct parent
+
+    java does not allow multi-inheritance (multiple parents at the same)
+
+    ex: you cannot do this:
+
+        class A extends B, C
+
+day39_inheritance
+    access
+        a
+        b
+
+protected:
+
+    without inheritance: acts like default, accessible only in the same package
+
+    with inheritance: protected variables & methods can be inherited to sub classes anywhere
