@@ -1,0 +1,25 @@
+package Day35Constructors;
+
+public class Person {
+
+
+    public String name;
+    public char gender;
+    public int age;
+
+
+    public Person(String name,char gender,int age){// todo default constractor
+        this.name=name;
+        this.gender=gender;
+        this.age=age;
+    }
+
+
+    public String toString() { // todo stotring method
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", gender=" + gender +
+                ", age=" + age +
+                '}';
+    }
+}
