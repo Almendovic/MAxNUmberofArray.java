@@ -1,4 +1,6 @@
-package day39inheritance.CarTask;
+package day40INheritance_MethodOveriding.CarTask.CARS;
+
+import day40INheritance_MethodOveriding.CarTask.CARS.Car;
 
 public class Toyota  extends Car {
 

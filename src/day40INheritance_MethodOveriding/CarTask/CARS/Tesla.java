@@ -1,6 +1,8 @@
-package day39inheritance.CarTask;
+package day40INheritance_MethodOveriding.CarTask.CARS;
 
-public class Tesla extends Car{
+import day40INheritance_MethodOveriding.CarTask.CARS.Car;
+
+public class Tesla extends Car {
 
 
     public Tesla( String model, int year, double price, String color, int miles) {
