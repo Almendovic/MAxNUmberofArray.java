@@ -1,0 +1,71 @@
+/26/2022
+
+Day 40 Inheritance
+
+day40_inheritance
+____________________________________________________________
+
+OOP: Inheritance
+Overriding
+final
+____________________________________________________________
+
+Unit 3 & 4 assessment due tonight
+
+Next week:
+    everything live
+    2 git class
+
+Following week:
+    Sep 5th: OFF
+    6th: Soft skills all day
+    Rest of the week: HTML
+
+Afterward:
+    2 java
+    2 automation
+    2 soft skills
+        - after all soft skills are done, there will be project days
+____________________________________________________________
+
+Inheritance
+
+    allows a class to pass its information to a different class
+
+    allows us to avoid repetition of code, write more organized code
+
+What is inherited:
+
+    all public variables & methods
+    all protected variables & methods
+    any default variables & methods in the same package
+
+What is not inherited:
+
+    constructor
+    all private variables & methods
+    any default variables & methods outside the package
+
+What is a relation
+
+    a way to describe how two classes in related
+
+    child is a parent
+
+Can you have multiple parent in java
+
+    no, can only have one direct parent
+
+All classes are sub classes of Object class
+
+Constructor with inheritance
+
+    constructor is not inherited
+
+    in order to create object we need to call the parent constructor always
+
+        using super()
+
+day40_inheritance.app
+
+day40_inheritance.shape
