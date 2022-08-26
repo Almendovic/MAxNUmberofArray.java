@@ -11,5 +11,12 @@ public class ParkingLot {//todo parking lot has a relation
         BMW bmw=new BMW("X5",2020,67350,"Black",120000);
 
 
+        toyota.start();
+        tesla.start();
+        bmw.start();
+
+
+
+
     }
 }
