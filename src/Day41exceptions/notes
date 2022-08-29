@@ -1,0 +1,63 @@
+8/29/2022
+
+Day 41 Exceptions
+
+day41_exceptions
+____________________________________________________________
+
+Exceptions
+
+What is an error
+
+    stops the execution, but it caused by factors outside of the side
+    so, we don't handle them
+
+What is an exception
+
+    stops the normal flow of execution because of some code
+    we will handle these
+
+Inheritance of Exceptions
+
+    Throwable
+
+        Exception -> checked exceptions
+
+            RuntimeException -> unchecked exceptions
+
+Exceptions are objects
+
+Types of exceptions:
+
+    checked/ compile time
+
+        these exceptions MUST be handled for the program to compile
+
+        Ex: Thread.sleep()
+            Note: this method accepts the millisecond argument to pause the execution for that time
+
+    unchecked/ run time
+
+        an exception that could occur and when it does it happens during execution.
+        You can handle or fix the code
+
+        Ex: StringIndexOutOfBounds, NullPointerException
+
+How to handle exceptions
+
+    try/catch block
+
+    you are able to run code in the try block
+    and then we are able to define possible exceptions that could happen in the catch block
+        -> if the exception occurs the catch block will handle it by running whatever code was defined in the catch block
+
+        catch block:
+            when we set up a catch block we are defining the type of exception that will be thrown so we create a reference of that object using
+
+            (exception name)
+
+                Note: 'e' is commonly used as the name
+                this part acts like a parameter for that block
+
+            Ex: catch(NullPointerException e)
+You do not have permission to send messages in this channel.

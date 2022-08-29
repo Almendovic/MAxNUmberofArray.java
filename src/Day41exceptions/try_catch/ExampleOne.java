@@ -6,11 +6,15 @@ public class ExampleOne {
 
         String s=null;
 
-        System.out.println(s.length());
+      //  System.out.println(s.length());
+
+          s="hello";
+       // System.out.println(s.charAt(10));
 
 
+        System.out.println("Hello");
 
 
-
+      //  Thread.sleep(5000);
     }
 }
