@@ -1,4 +1,6 @@
-package day40INheritance_MethodOveriding.CarTask.CARS;
+package day40INheritance_MethodOveriding.CarTask.CARS.Car;
+
+
 
 public class ParkingLot {//todo parking lot has a relation
     public static void main(String[] args) {

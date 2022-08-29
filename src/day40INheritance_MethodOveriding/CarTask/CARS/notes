@@ -1,71 +1,121 @@
-/26/2022
-
+8/26/2022
 Day 40 Inheritance
-
 day40_inheritance
 ____________________________________________________________
-
 OOP: Inheritance
 Overriding
 final
-____________________________________________________________
-
-Unit 3 & 4 assessment due tonight
-
-Next week:
-    everything live
-    2 git class
-
-Following week:
-    Sep 5th: OFF
-    6th: Soft skills all day
-    Rest of the week: HTML
-
-Afterward:
-    2 java
-    2 automation
-    2 soft skills
-        - after all soft skills are done, there will be project days
-____________________________________________________________
-
-Inheritance
-
-    allows a class to pass its information to a different class
-
-    allows us to avoid repetition of code, write more organized code
-
-What is inherited:
-
-    all public variables & methods
-    all protected variables & methods
-    any default variables & methods in the same package
-
-What is not inherited:
-
-    constructor
-    all private variables & methods
-    any default variables & methods outside the package
-
-What is a relation
-
-    a way to describe how two classes in related
-
-    child is a parent
-
-Can you have multiple parent in java
-
-    no, can only have one direct parent
-
-All classes are sub classes of Object class
-
-Constructor with inheritance
-
-    constructor is not inherited
-
-    in order to create object we need to call the parent constructor always
-
-        using super()
-
 day40_inheritance.app
-
 day40_inheritance.shape
+____________________________________________________________
+Unit 3 & 4 assessment due tonight
+Next week:
+everything live
+2 git class
+Following week:
+Sep 5th: OFF
+6th: Soft skills all day
+Rest of the week: HTML
+Afterward:
+2 java
+2 automation
+2 soft skills
+- after all soft skills are done, there will be project
+days
+____________________________________________________________
+Inheritance
+allows a class to pass its information to a different class
+allows us to avoid repetition of code, write more organized code
+What is inherited:
+all public variables & methods
+all protected variables & methods
+any default variables & methods in the same package
+What is not inherited:
+constructor
+all private variables & methods
+any default variables & methods outside the package
+What is a relation
+a way to describe how two classes in related
+child is a parent
+Can you have multiple parent in java
+no, can only have one direct parent
+All classes are sub classes of Object class
+Constructor with inheritance
+constructor is not inherited
+in order to create object we need to call the parent constructor
+always
+using super()
+____________________________________________________________
+Method Overriding
+change the implementation(code) of a method that is inherited from a
+super class
+-> another way to phrase it: after inheriting a method we
+can change how it works
+use of overriding: create method implementation that is more
+specific for the sub class
+-> it will be used more in abstraction
+@Override
+annotation that helps make sure you override the method correctly
+using the annotation is optional, but recommended to use
+Q: What is the difference between overloading and overriding
+overloading: having the same method name, but having different
+parameters
+-> this happens in the same file
+overriding: changing the implementation of a method that came from
+the super class
+-> this happens across multiple files (super & sub)
+Method Overriding rules
+method needs to be inherits
+method signature should be the same
+method signature: name + parameters
+access modifier should be the same or more visible
+public > protected > default > private
+return type should be same
+*** or covariant: sub class of that return type
+overriding is only for instance methods
+____________________________________________________________
+final
+final variable: variable that cannot be reassigned, cannot be
+changed
+Ex: final int a = 5;
+a = 10; -> this line will not compile because
+a variable cannot be changed
+- constants: public static final variables
+information/data that are fixed and
+accessible everywhere
+Ex: Math.PI
+Integer.MAX_VALUE
+- convention for creating constant variables:
+constant variables are created in all uppercase . underscore for spaces
+final method: method that cannot be overridden -> cannot change the
+implementation of the method
+sytnax: public final void method(){}
+Q: can you overload final methods
+yes
+final class: this class cannot be the parent of another class.
+syntax: public final class name {}
+Q: can a final class be a sub class
+yes
+____________________________________________________________
+How does Encapsulation work with Inheritance
+private variables are not inherited to child classes, but does that
+mean we can't encapsulate?
+But we have public getter and setters that have the indirect access
+to the variable, so we can inherit the encapsulated classes and still
+access what we need.
+____________________________________________________________
+Can you inherit static methods?
+yes, static information belongs to both classes
+Can you override static methods?
+NO, static methods cannot be overridden - These methods are hidden
+Method overriding vs method hiding:
+instance methods: can be overridden, we can change how the method
+works in the sub class
+static methods: it will look like we are overriding but the idea is
+different
+When you try to make a method with the same name and
+parameters it is doing method hiding
+It means you are creating a new method with the same
+name, in the sub class
+Because these are static you have access to both static
+methods with the same name, because each is accessible by their class

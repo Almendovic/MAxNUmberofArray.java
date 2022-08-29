@@ -1,4 +1,4 @@
-package day40INheritance_MethodOveriding.CarTask.CARS;
+package day40INheritance_MethodOveriding.CarTask.CARS.Car;
 
 public class Car { // todo parent class
 
