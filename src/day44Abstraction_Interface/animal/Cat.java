@@ -1,0 +1,22 @@
+package day44Abstraction_Interface.animal;
+
+import day44Abstraction_Interface.animal.Animal;
+
+public final class Cat extends Animal {
+
+
+    public Cat(String name, String breed, char gender, int age, String size, String color) {
+        super(name, breed, gender, age, size, color);
+    }
+
+    @Override
+    public void eat() { //todo overriding become mandatory
+        System.out.println("");
+    }
+
+    public void meow(){
+        System.out.println(getName()+ " is meowing");
+    }
+
+
+}

@@ -1,0 +1,42 @@
+9/2/2022
+
+Day 42 Abstraction
+
+day42_abstraction
+____________________________________________________________
+
+OOP: Abstraction
+Abstract Class
+Interface
+____________________________________________________________
+
+Next Week
+
+Monday: OFF
+Tuesday: All day soft skills
+    -> Encapsulation & Inheritance Short quiz due midnight est
+Thursday: HTML all day
+Friday: HTML all day
+____________________________________________________________
+
+day42_abstraction.exception_recap
+
+IQ: What is the difference between final, finally, finalize()?
+
+    They are all part of this concepts
+
+    final: not changing the components
+        you can't change the value of a final variable
+        you can't change the implementation of a final method
+        you can't inherit a final class
+
+    finally: block of code used with the try catch. It always runs no matter if there is an exception or not
+        -> commonly used for 'clean up' -> ex: closing a connection to a db, or close the Scanner
+
+    finalize(): method that is use with garbage collection. You could define some code that you wanted to run when an object cleaned up.
+
+        int [] a = {3, 4, 1}; // after this line, the object loses its reference
+        a = null;
+        a = new int[4];
+
+        Garbage collection: cleans up the memory. Removes object with no reference
