@@ -1,0 +1,44 @@
+package day46Polymorphism;
+
+import day43Abstraction.emloyee.*;
+import day45Abstraction.shape.Circle;
+import day45Abstraction.shape.Square;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Polymorphism {
+    public static void main(String[] args) {
+
+
+        String str= "Wooden Spoon";
+
+        Integer n1=2;
+
+        Double n2=5.5;
+
+        Boolean r1=true;
+
+        Object[]array={str,n1,n2,r1,new Circle(4),new Square(7)}; //todo cuz Object is parent class of all
+
+        Employee tester = new Tester("Ali", 30, 'M', 42, "Sdet", 1400000);
+        Employee developer = new Developer("Alex", 28, 'M', 45, "Developer", 150000);
+        Employee teacher = new Teacher("Anna", 56, 'F', 67, "Teahcer", 20000);
+        Employee driver = new Driver("JOhn", 78, 'M', 87, "Driver", 50000);
+
+
+        ArrayList<Person>CydeoEmployees=new ArrayList<>();
+
+
+        CydeoEmployees.add(tester);
+        CydeoEmployees.add(developer);
+        CydeoEmployees.add(teacher);
+        CydeoEmployees.add(driver);
+
+        System.out.println("----------------------------------");
+
+            Employee employee =new Tester("Ali",30,'M',42,"SDET",1500000);
+            employee.work();
+
+    }
+}

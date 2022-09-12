@@ -2,7 +2,7 @@ package day44Abstraction_Interface.animal;
 
 import day44Abstraction_Interface.animal.Animal;
 
-public final class Cat extends Animal {
+public final class Cat extends Animal implements Playable {
 
 
     public Cat(String name, String breed, char gender, int age, String size, String color) {
@@ -14,9 +14,14 @@ public final class Cat extends Animal {
         System.out.println("");
     }
 
-    public void meow(){
-        System.out.println(getName()+ " is meowing");
+    public void meow() {
+        System.out.println(getName() + " is meowing");
     }
 
 
+    public void play() {
+        System.out.println(getName() + " is playing with ball");
+
+
+    }
 }
