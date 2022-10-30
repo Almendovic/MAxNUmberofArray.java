@@ -5,9 +5,8 @@ import java.util.Scanner;
 public class PrimeInRange {
     public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
-        System.out.println("What number do you want to go to?");
-        int range = input.nextInt();
+
+        int range = 30;
 
         for (int i = 2; i <= range; i++) {// starting from 2 going untill the range number
             boolean isPrime = true;// every tim

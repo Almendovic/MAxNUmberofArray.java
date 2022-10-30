@@ -25,7 +25,7 @@ public class FrequncyOfCharactersInterviewQuestion {
 
          */
 
-        String str = "hello world java";
+        String str = "AAABBCDD";
         String checked = "";
 
         for (int i = 0; i < str.length(); i++) { // outer: iterating one character at a time --> charAt(i)
@@ -41,7 +41,7 @@ public class FrequncyOfCharactersInterviewQuestion {
 
                 } // inner loop ends
 
-                System.out.println(str.charAt(i) + " - " + count);
+                System.out.print(str.charAt(i) + " - " + count);
                 checked += str.charAt(i); // adds to the checked String
             } // if statement ends
         } // outer loop ends

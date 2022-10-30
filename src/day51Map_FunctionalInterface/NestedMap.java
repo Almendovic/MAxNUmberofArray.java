@@ -45,6 +45,12 @@ public class NestedMap {
         }
 
 
+        System.out.println("-----------------------------------------------");
+        System.out.println(mapofmap.get(map1).get("Veronica"));
+        System.out.println("-----------------------------------------------");
+
+
+
 
 
 

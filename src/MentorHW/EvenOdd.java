@@ -7,14 +7,14 @@ public class EvenOdd {
          int odd=0;
          int even=0;
 
-        for (int i = 0; i <=numbers; i++) {
+        for (int i = 1; i <=numbers; i++) {
 
             if(i%2 ==0){
 
-                System.out.println(i+ " even");
+                System.out.println(i+ "  is even");
             }else{
 
-                System.out.println(i+ " odd");
+                System.out.println(i+ " is odd");
             }
 
 
